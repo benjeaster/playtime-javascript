@@ -127,6 +127,9 @@ document.getElementById("submit").onclick = function() {
 }
 
 
+
+// code for the count app
+
 let count = 0;
 
 document.getElementById("decreaseBtn").onclick = function(){
@@ -152,12 +155,7 @@ document.getElementById("setBtn").onclick = function(){
 }
 
 
-
-document.getElementById("change").onclick = function(){
-    display.innerHTML("backgroundcolor:red")
-}
-
-
+//code for the dice roll
 
 document.getElementById("roll").onclick = function(){
 
@@ -170,6 +168,7 @@ document.getElementById("roll").onclick = function(){
     document.getElementById("z").innerHTML = "z = " + z;
 }
 
+//code for username string manipulation
 
 document.getElementById("submitString").onclick = function(){
     let pete;
