@@ -81,8 +81,8 @@ button{
 #rolldiv{
     padding: 20px;
     margin-left:160px;
-    height: 100px;
-    width: 400px;
+    height: 200px;
+    width: 600px;
     background-color: rgb(75, 35, 113);
     color:bisque;
     font-size:20px;
@@ -91,6 +91,14 @@ button{
     border: 1px solid pink;
     border-radius: 20px;
     align-items: center;
+}
+#verify{
+    background-color: aquamarine;
+    height:30px;
+    width:100px;
+    font-size: large;
+    border:none;
+    border-radius: 5px;
 }
 #decreaseBtn{
     height:30px;

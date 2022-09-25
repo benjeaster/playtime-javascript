@@ -159,6 +159,7 @@ document.getElementById("setBtn").onclick = function(){
 
 document.getElementById("roll").onclick = function(){
 
+
     let x = Math.floor(Math.random() * 6 ) + 1;
     let y = Math.floor(Math.random() * 6) + 1;
     let z = Math.floor(Math.random() * 6) + 1;
@@ -166,6 +167,28 @@ document.getElementById("roll").onclick = function(){
     document.getElementById("x").innerHTML = "x = " + x;
     document.getElementById("y").innerHTML = "y = " + y;
     document.getElementById("z").innerHTML = "z = " + z;
+
+    console.log(x);
+    console.log(y);
+    console.log(z);
+
+    console.log(x == y && y == z)
+
+    document.getElementById("verify").onclick = function verify() {
+        if(x == y && y == z){
+            document.getElementById("x").innerHTML = "x = " + x;
+            document.getElementById("y").innerHTML = "y = " + y;
+            document.getElementById("z").innerHTML = "z = " + z;
+    
+            window.alert("congrats you win");
+        }
+        else{
+            window.alert("all three must be equal")
+        }
+
+    }
+
+    
 }
 
 //code for username string manipulation
@@ -240,12 +263,16 @@ const mycheckbox = document.getElementById("inputCheck")
 
 
 document.getElementById("check").onclick = function(){
-    window.alert("hello world")
-    // let rad;
-    // let area;
-    // rad = document.getElementById("msg").value;
-    // area =  3.142 * (Math.pow(rad,2));
-    document.getElementById("mesg").innerHTML = "this is the show now"
+    
+    let rad;
+    let area;
+    rad = document.getElementById("msg").value;
+    area =  3.142 * (Math.pow(rad,2));
+    document.getElementById("mesg").innerHTML = `area = ${area}, try again`
+
+    if (Math.round(area)==100){
+        document.getElementById("mesg").innerHTML = `seems you got that right, area = ${area}`
+    }
     
 }
 
